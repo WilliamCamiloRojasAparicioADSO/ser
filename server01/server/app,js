@@ -1,0 +1,21 @@
+
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.querySelector('.formul');
+  const input = form.querySelectorAll('input');
+  const button = document.querySelector('.sies');
+})
+
+const formulario = document.querySelector('.formul');
+    const botonValidar = document.querySelector('.seis');
+
+
+    function agregarNuevoCampo() {
+
+        const nuevoInput = document.createElement('input');
+        nuevoInput.setAttribute('type', 'text');
+        nuevoInput.setAttribute('placeholder', 'Nuevo campo');
+
+        formulario.appendChild(nuevoInput);
+    }
+
+    botonValidar.addEventListener('click', agregarNuevoCampo);
